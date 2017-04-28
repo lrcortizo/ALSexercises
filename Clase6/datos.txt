@@ -1,0 +1,1 @@
+<generator object escribe_archivo.<locals>.<genexpr> at 0x03A18330>
