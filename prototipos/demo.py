@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     p2 = Punto3D(1, 2, 3)
     print(p2)
-    print(p1.__class__)
+    print(p2.__class__)
 
     p2.__class__ = Punto
     print(p2)

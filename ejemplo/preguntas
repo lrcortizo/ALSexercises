@@ -1,0 +1,42 @@
+1. (2 pts.) Cree la clase Pieza, que contiene información sobre el identificador (id), nombre
+(nombre), y método __str__(), y el diccionario de piezas dictPiezas. Cree también dos
+funciones: load() y save(), empleando Pickle. La primera recuperará todas las piezas del
+diccionario de un archivo llamado “piezas.dat”. La segunda las guardará en el mismo
+archivo. Nótese que se debe tratar el diccionario y también las piezas en sí.
+
+
+2. (2 pts.) Dada la clase ListaOrdenada, con métodos inserta(), to_list(), y borraEn(), cree
+un test adecuado para ambos métodos inserta() y borraEn(), de manera que se compruebe
+que dichos métodos funcionan correctamente. Nótese que el método to_list() devuelve una
+lista de Python con los elementos almacenados, en su mismo orden.
+
+
+3. (2 pts.) Cree la función invoke(obj, strMth), que permita invocar un método strMth (que no
+precise parámetros) de obj pasados en la llamada. En el caso de que el método exista,
+devolverá el valor que devuelva dicho método. En caso de que no exista, devolverá None.
+
+        >>> p = Pieza(1, “Tuerca”)
+        >>> print(invoke(p, “getId”))
+        1
+        >>> print(invoke(p, “foo”))
+        >>>
+
+
+4. (2 pts.) Cree la función lambda collatz(n), que devuelve una lista con la sucesión de
+collatz a partir del número n pasado por parámetro. Para cada número par, este se divide
+por dos; mientras que por cada uno impar, se multiplica por tres y se le suma uno. Es una
+sucesión finita que acaba en uno.
+
+
+5. (2 pts.) Para un partido de baloncesto es necesario llevar un control por cada jugador, de
+forma que se sepa el número de puntos anotados, y el número de faltas personales, según
+su dorsal. Construye la clase PuntosPartido, que albergará un diccionario en su interior.
+
+    a) Cree un diccionario que permita soportar esta información, y un método que añada un
+    nuevo jugador, con su número de dorsal, nombre, faltas y puntos. Cree métodos para
+    añadirle puntos y faltas a un jugador.
+
+    b) Cree métodos parra convertir dicho diccionario en un archivo JSON, y viceversa. El
+    método save(nf) guardará la información en un archivo JSON de nombre nf, y el
+    método estático load(nf) devolverá un objeto PuntosPartido con la información
+    cargada.
