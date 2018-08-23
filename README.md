@@ -1,1 +1,1 @@
-# Exercises of Script Languages Applications subject - Computer Science Degree
+## Exercises of Script Languages Applications subject - Computer Science Degree
